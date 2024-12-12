@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <div class="card mb-4">
+    <img src="{{ movie.image }}" class="card-img-top" alt="{{ movie.title }}">
+    <div class="card-body">
+      <h2 class="card-title">{{ movie.title }}</h2>
+      <p class="card-text">{{ movie.description }}</p>
+    </div>
+  </div>
+{% endblock %}
